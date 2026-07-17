@@ -1,0 +1,47 @@
+#navbar{
+    display: flex;
+    background-color:#333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: clip;
+}
+#navbar a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+#navbar a:hover{
+    background-color: green;
+}
+#navbar a:active{
+    background-color: purple;
+}
+.brand{
+    flex-grow: 1;
+}
+#courses{
+    width: 100%;
+    border-collapse: collapse;
+}
+#courses th, #courses td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#courses th{
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+#courses tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+#courses tr:hover{
+    background-color: #ddd;
+}
+#note{
+    display:none;
+    /*กรณีต้องการซ่อนข้อมูลแต่ยังกินพื้นที่ในเว็บอยู๋จะใช้Hiddenแต่ถ้าNoneจะเป็นไม่แสดงและไม่กินพื้นที่ในเว็บอีกเลย*/
+}
