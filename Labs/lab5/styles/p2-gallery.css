@@ -1,0 +1,57 @@
+.hero{
+    max-width: 100%;
+    height: auto;
+    /* ใช้max-width 100% ดีกว่า width 100% เนื่องจาก width 100% ภาพจะยืด*/
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tile{
+    margin: 0;
+    flex: 1 1 30%;
+}
+@media (max-width: 768px) {
+    .tile{
+        flex: 1 1 45%;
+    }
+}
+@media (max-width: 360px) {
+    .tile{
+        flex: 1 1 100%;
+    }
+}
+.tile img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.tile-portrait img{
+    object-position:center;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffdc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+html{
+    background-color: #fcfcfc;
+}
+h1{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.tile figcaption{
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px 0;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- TODO 1: add the viewport meta tag here -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="/styles/p2-gallery.css" />
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+
+    <!-- Hero image: replace the src with your own file in images/ -->
+    <img class="hero" src="images/pexels-vincent-ma-janssen-2827848.jpg" alt="Wolf image" />
+
+    <div class="gallery">
+      <figure class="tile">
+        <img src="images/pexels-sunny67-21655742.jpg" alt="A wolf walking across a grassy field." />
+        <figcaption>A wolf walking across a grassy field.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="images/pexels-omar-tapia-129681804-33600213.jpg" alt="A pale wolf gazing upward among green ferns." />
+        <figcaption>A pale wolf gazing upward among green ferns.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="images/pexels-omar-ramadan-1739260-29448267.jpg" alt="A wolf carrying food through the forest." />
+        <figcaption>A wolf carrying food through the forest.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="images/pexels-natarajan-m-272680561-12859255.jpg" alt="Two wolves standing close together." />
+        <figcaption>Two wolves standing close together.</figcaption>
+      </figure>
+      <figure class="tile">
+        <img src="images/pexels-andreas-schnabl-1775843-28541402.jpg" alt="A wolf standing on rocky ground, looking at the camera." />
+        <figcaption>A wolf standing on rocky ground, looking at the camera.</figcaption>
+      </figure>
+      <!-- TODO 2: this tile is deliberately a tall portrait photo.
+           Under object-fit: cover it will crop badly.
+           Fix the framing with object-position in your CSS. -->
+      <figure class="tile tile-portrait">
+        <img src="images/pexels-dominikrh-35604352.jpg" alt="Close-up of a wolf's face in profile." />
+        <figcaption>Close-up of a wolf's face in profile.</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
