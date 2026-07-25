@@ -1,3 +1,4 @@
+Credit for Photo
 All photos from [Pexels]https://www.pexels.com, used under the
 [Pexels License](https://www.pexels.com/license/).
 | File       | Photographer  | Source                                                    |
