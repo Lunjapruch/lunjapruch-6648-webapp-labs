@@ -26,7 +26,7 @@ function findPrimes(limit) {
 }
 function displayPrimes(primes,limit) {
   let output = document.getElementById("output");
-  output.textContent = `Prime numbers up to ${limit}: ${primes.join(", ")}`;
+  alert(`The prime numbers up to ${limit} are: ${primes.join(", ")}`);
 }
 let input = prompt("Enter a positive integer:");
 while (!validateInput(input)) {
