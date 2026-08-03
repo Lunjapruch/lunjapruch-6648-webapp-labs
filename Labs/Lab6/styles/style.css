@@ -1,22 +1,54 @@
-html{
+html {
     background-color: rgb(252, 236, 239);
 }
-body h1{
-     text-align: center;
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
+
+body {
     background-color: aliceblue;
-    border: 0.5px solid;
+    border: 0.5px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 24px;
+    border-radius: 10px;
 }
+
+body h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #2c3e50;
+}
+
+.intro {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rule-list li {
+    color: #e67e22;
+    margin-bottom: 8px;
+}
+
+.note-title {
+    font-weight: bold;
+    color: #8e44ad;
+    margin-top: 16px;
+}
+
+.note-list li {
+    color: #27ae60;
+    margin-bottom: 8px;
+}
+
 #output {
-  font-size: 1.5em;         
-  color: #000000;             
-  font-weight: bold;          
-  margin-top: 30px;            
-  padding: 15px;                
-  background-color: #f0f8f0;  
-  border-radius: 8px;         
-  border: 1px solid #ccc;      
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f8f0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
