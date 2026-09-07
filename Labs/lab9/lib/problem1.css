@@ -1,0 +1,9 @@
+#avatar-img{
+    border:  5px solid blue;
+    border-radius: 50%;
+    width:200px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
