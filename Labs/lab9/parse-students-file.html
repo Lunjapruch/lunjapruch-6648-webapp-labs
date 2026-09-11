@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fetching and Parsing JSON</title>
+</head>
+<body>
+<h2>Fetching and Parsing JSON</h2>
+<ol id="demo"></ol>
+<script>
+  async function parseFile() {
+    try {
+      const response = await fetch("students.json");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const responseData = await response.json();
+      const people = responseData.wclass;
+      const lines = people.map(
+        (item) => {
+          const student = item.student;
+          return `<li>${student["@attributes"].id}  <strong>${student.name}</strong>  ${student.skill}</li>`;
+        }
+      );
+      document.querySelector("#demo").innerHTML =
+        lines.join("\n");
+    } catch (err) {
+      document.querySelector("#demo").textContent =
+        `Error: ${err.message}`;
+    }
+  }
+  parseFile();
+</script>
+</body>
+</html>

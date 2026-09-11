@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fetching and Parsing JSON</title>
+</head>
+<body>
+<h2>Fetching and Parsing JSON</h2>
+<ol id="demo"></ol>
+<script>
+  async function parseFile() {
+    try {
+      const response = await fetch("places.json");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const responseData = await response.json();
+      const places = responseData.results;
+      const lines = places.map(
+        (place) => {
+          const name = place.name;
+          const lat = place.geometry.location.lat;
+          const lng = place.geometry.location.lng;
+          return `<li><span style="color:blue">name = ${name}</span><br><span style="color:green">location = ${lat} ${lng}</span></li>`;
+        }
+      );
+      document.querySelector("#demo").innerHTML =
+        lines.join("");
+    } catch (err) {
+      document.querySelector("#demo").innerHTML =
+        `Error: ${err.message}`;
+    }
+  }
+  parseFile();
+</script>
+</body>
+</html>
