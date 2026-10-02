@@ -1,0 +1,10 @@
+.App h1 {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+.App a {
+  display: block;
+  margin-top: 10px;
+}
