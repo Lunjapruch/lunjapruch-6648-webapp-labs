@@ -1,0 +1,10 @@
+.GitHubInfo h1 {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+.GitHubInfo a {
+  display: block;
+  margin-top: 20px;
+}
