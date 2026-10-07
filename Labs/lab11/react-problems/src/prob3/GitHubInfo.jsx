@@ -1,4 +1,4 @@
-import { GitHubAvatar, GitHubRepoURL } from './GitHubComponents.jsx';
+import { GitHubAvatar, GitHubRepoURL } from '../shared/GitHubComponents.jsx';
 
 export function GitHubInfo({ userInfo }) {
   return (

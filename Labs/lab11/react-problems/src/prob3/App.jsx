@@ -1,6 +1,6 @@
 import './App.css';
 import { GitHubInfo } from './GitHubInfo.jsx';
-import { users } from './users.js';
+import { users } from '../shared/users.js';
 
 export default function App() {
   return (

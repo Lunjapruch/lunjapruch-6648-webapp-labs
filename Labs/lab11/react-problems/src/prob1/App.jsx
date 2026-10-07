@@ -1,3 +1,4 @@
+import '../shared/index.css';
 function GitHubAvatar() {
   return(
     <img src="https://github.com/Lunjapruch.png"
